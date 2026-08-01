@@ -1,0 +1,335 @@
+/*==========================================
+SERVICES
+==========================================*/
+
+.services{
+padding:100px 0;
+background:var(--background);
+overflow:hidden;
+}
+
+/*==========================================
+SECTION HEADING
+==========================================*/
+
+.section-heading{
+max-width:700px;
+margin:0 auto 70px;
+text-align:center;
+}
+
+.section-heading span{
+display:inline-block;
+font-size:14px;
+font-weight:600;
+letter-spacing:2px;
+text-transform:uppercase;
+color:var(--gold);
+margin-bottom:18px;
+}
+
+.section-heading h2{
+font-size:48px;
+line-height:1.2;
+font-weight:700;
+color:var(--primary);
+margin-bottom:22px;
+}
+
+.section-heading p{
+font-size:16px;
+line-height:1.9;
+color:var(--text-light);
+}
+
+/*==========================================
+GRID
+==========================================*/
+
+.services-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:30px;
+}
+
+/*==========================================
+CARD
+==========================================*/
+
+.service-card{
+background:var(--white);
+padding:45px 35px;
+border-radius:12px;
+box-shadow:var(--shadow);
+position:relative;
+overflow:hidden;
+transition:var(--transition);
+border:1px solid rgba(0,0,0,.05);
+}
+
+.service-card::before{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:4px;
+background:var(--gold);
+transform:scaleX(0);
+transform-origin:left;
+transition:.4s;
+}
+
+.service-card:hover::before{
+transform:scaleX(1);
+}
+
+/*==========================================
+ICON
+==========================================*/
+
+.service-icon{
+width:75px;
+height:75px;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:30px;
+color:var(--gold);
+background:rgba(212,175,55,.08);
+border:2px solid rgba(212,175,55,.18);
+border-radius:16px;
+margin-bottom:30px;
+transition:var(--transition);
+}
+
+/*==========================================
+TITLE
+==========================================*/
+
+.service-card h3{
+font-size:24px;
+font-weight:600;
+line-height:1.3;
+color:var(--primary);
+margin-bottom:18px;
+}
+
+/*==========================================
+DESCRIPTION
+==========================================*/
+
+.service-card p{
+font-size:15px;
+line-height:1.9;
+color:var(--text-light);
+margin-bottom:28px;
+}
+
+/*==========================================
+BUTTON
+==========================================*/
+
+.service-card button{
+background:none;
+border:none;
+padding:0;
+font-size:15px;
+font-weight:600;
+color:var(--primary);
+display:flex;
+align-items:center;
+gap:8px;
+transition:var(--transition);
+}
+/*==========================================
+HOVER EFFECT
+==========================================*/
+
+.service-card:hover{
+transform:translateY(-12px);
+box-shadow:0 25px 55px rgba(0,0,0,.12);
+}
+
+.service-card:hover .service-icon{
+background:var(--gold);
+color:var(--white);
+border-color:var(--gold);
+transform:rotate(-8deg) scale(1.08);
+}
+
+.service-card:hover button{
+color:var(--gold);
+transform:translateX(8px);
+}
+
+/*==========================================
+BUTTON ICON ANIMATION
+==========================================*/
+
+.service-card button{
+position:relative;
+}
+
+.service-card button::after{
+content:"";
+position:absolute;
+bottom:-4px;
+left:0;
+width:0;
+height:2px;
+background:var(--gold);
+transition:var(--transition);
+}
+
+.service-card:hover button::after{
+width:100%;
+}
+
+/*==========================================
+CARD BACKGROUND EFFECT
+==========================================*/
+
+.service-card::after{
+content:"";
+position:absolute;
+right:-90px;
+bottom:-90px;
+width:180px;
+height:180px;
+border-radius:50%;
+background:rgba(212,175,55,.05);
+transition:.5s;
+}
+
+.service-card:hover::after{
+transform:scale(1.25);
+}
+
+/*==========================================
+ICON TRANSITION
+==========================================*/
+
+.service-icon{
+transition:.4s ease;
+}
+
+.service-card button{
+transition:.35s ease;
+}
+
+/*==========================================
+TABLET
+==========================================*/
+
+@media(max-width:992px){
+
+.services{
+padding:80px 0;
+}
+
+.section-heading{
+margin-bottom:50px;
+}
+
+.section-heading h2{
+font-size:40px;
+}
+
+.services-grid{
+grid-template-columns:repeat(2,1fr);
+gap:25px;
+}
+
+.service-card{
+padding:35px 28px;
+}
+
+.service-icon{
+width:68px;
+height:68px;
+font-size:28px;
+margin-bottom:24px;
+}
+
+.service-card h3{
+font-size:22px;
+}
+
+}
+
+/*==========================================
+MOBILE
+==========================================*/
+
+@media(max-width:768px){
+
+.services{
+padding:70px 0;
+}
+
+.section-heading h2{
+font-size:34px;
+}
+
+.section-heading p{
+font-size:15px;
+}
+
+.services-grid{
+grid-template-columns:1fr;
+}
+
+.service-card{
+padding:32px 25px;
+}
+
+.service-icon{
+width:65px;
+height:65px;
+font-size:26px;
+}
+
+.service-card h3{
+font-size:20px;
+}
+
+.service-card p{
+font-size:14px;
+}
+
+}
+
+/*==========================================
+SMALL MOBILE
+==========================================*/
+
+@media(max-width:480px){
+
+.section-heading h2{
+font-size:30px;
+}
+
+.section-heading span{
+font-size:13px;
+}
+
+.service-card{
+padding:28px 22px;
+}
+
+.service-icon{
+width:60px;
+height:60px;
+font-size:24px;
+}
+
+.service-card h3{
+font-size:18px;
+}
+
+.service-card button{
+font-size:14px;
+}
+
+}

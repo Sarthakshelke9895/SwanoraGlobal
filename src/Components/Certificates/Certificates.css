@@ -1,0 +1,411 @@
+/*==========================================
+CERTIFICATES
+==========================================*/
+
+.certificates{
+padding:100px 0;
+background:#ffffff;
+overflow:hidden;
+position:relative;
+}
+
+.certificate-logo{
+width:90px;
+height:90px;
+object-fit:contain;
+filter:grayscale(100%);
+opacity:.75;
+transition:.4s ease;
+}
+
+.certificate-card:hover .certificate-logo{
+filter:grayscale(0%);
+opacity:1;
+transform:scale(1.08);
+}
+
+/*==========================================
+BACKGROUND
+==========================================*/
+
+
+
+/*==========================================
+SECTION HEADING
+==========================================*/
+
+.certificates .section-heading{
+max-width:760px;
+margin:auto;
+text-align:center;
+margin-bottom:70px;
+position:relative;
+z-index:5;
+}
+
+.certificates .section-heading span{
+display:inline-block;
+font-size:14px;
+font-weight:600;
+letter-spacing:2px;
+text-transform:uppercase;
+color:var(--gold);
+margin-bottom:18px;
+}
+
+.certificates .section-heading h2{
+font-size:48px;
+line-height:1.2;
+font-weight:700;
+color:var(--primary);
+margin-bottom:22px;
+}
+
+.certificates .section-heading p{
+font-size:16px;
+line-height:1.9;
+color:var(--text-light);
+}
+
+/*==========================================
+MARQUEE
+==========================================*/
+
+.marquee{
+position:relative;
+width:100%;
+overflow:hidden;
+margin:25px 0;
+}
+
+.marquee-track{
+display:flex;
+align-items:center;
+gap:28px;
+width:max-content;
+}
+
+/*==========================================
+CARD
+==========================================*/
+
+.certificate-card{
+min-width:220px;
+height:170px;
+background:#ffffff;
+border-radius:16px;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+box-shadow:0 15px 35px rgba(0,0,0,.08);
+border:1px solid rgba(0,0,0,.05);
+transition:.4s;
+position:relative;
+overflow:hidden;
+flex-shrink:0;
+}
+
+/*==========================================
+TOP BORDER
+==========================================*/
+
+.certificate-card::before{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:4px;
+background:var(--gold);
+transform:scaleX(0);
+transform-origin:left;
+transition:.4s;
+}
+
+/*==========================================
+BACKGROUND EFFECT
+==========================================*/
+
+.certificate-card::after{
+content:"";
+position:absolute;
+right:-70px;
+bottom:-70px;
+width:150px;
+height:150px;
+background:rgba(212,175,55,.05);
+border-radius:50%;
+transition:.4s;
+}
+
+/*==========================================
+ICON
+==========================================*/
+
+.certificate-icon{
+width:72px;
+height:72px;
+display:flex;
+justify-content:center;
+align-items:center;
+border-radius:18px;
+background:rgba(212,175,55,.08);
+border:2px solid rgba(212,175,55,.18);
+color:var(--gold);
+margin-bottom:22px;
+transition:.4s;
+}
+
+/*==========================================
+TITLE
+==========================================*/
+
+.certificate-card h4{
+font-size:22px;
+font-weight:600;
+color:var(--primary);
+transition:.35s;
+}
+
+/*==========================================
+MARQUEE ANIMATION
+==========================================*/
+
+.marquee-track{
+animation:marquee 30s linear infinite;
+}
+
+.reverse-track{
+animation:marqueeReverse 30s linear infinite;
+}
+
+@keyframes marquee{
+
+0%{
+transform:translateX(0);
+}
+
+100%{
+transform:translateX(-50%);
+}
+
+}
+
+@keyframes marqueeReverse{
+
+0%{
+transform:translateX(-50%);
+}
+
+100%{
+transform:translateX(0);
+}
+
+}
+
+/*==========================================
+PAUSE ON HOVER
+==========================================*/
+
+.marquee:hover .marquee-track{
+animation-play-state:paused;
+}
+
+/*==========================================
+CARD HOVER
+==========================================*/
+
+.certificate-card:hover{
+transform:translateY(-10px);
+box-shadow:0 25px 55px rgba(0,0,0,.12);
+}
+
+.certificate-card:hover::before{
+transform:scaleX(1);
+}
+
+.certificate-card:hover::after{
+transform:scale(1.2);
+}
+
+.certificate-card:hover .certificate-icon{
+background:var(--gold);
+color:var(--white);
+border-color:var(--gold);
+transform:rotate(-10deg) scale(1.08);
+}
+
+.certificate-card:hover h4{
+color:var(--gold);
+}
+
+/*==========================================
+ICON
+==========================================*/
+
+.certificate-icon{
+transition:.4s ease;
+}
+
+.certificate-card h4{
+transition:.35s ease;
+}
+
+/*==========================================
+EDGE FADE
+==========================================*/
+
+.marquee::before,
+.marquee::after{
+content:"";
+position:absolute;
+top:0;
+width:120px;
+height:100%;
+z-index:5;
+pointer-events:none;
+}
+
+.marquee::before{
+left:0;
+background:linear-gradient(to right,#ffffff,transparent);
+}
+
+.marquee::after{
+right:0;
+background:linear-gradient(to left,#ffffff,transparent);
+}
+
+/*==========================================
+TABLET
+==========================================*/
+
+@media(max-width:992px){
+
+.certificates{
+padding:80px 0;
+}
+
+.certificates .section-heading{
+margin-bottom:50px;
+}
+
+.certificates .section-heading h2{
+font-size:40px;
+}
+
+.certificate-card{
+min-width:180px;
+height:150px;
+}
+
+.certificate-icon{
+width:62px;
+height:62px;
+margin-bottom:18px;
+}
+
+.certificate-card h4{
+font-size:18px;
+}
+
+.marquee-track{
+gap:20px;
+animation-duration:24s;
+}
+
+.reverse-track{
+animation-duration:24s;
+}
+
+}
+
+/*==========================================
+MOBILE
+==========================================*/
+
+@media(max-width:768px){
+
+.certificates{
+padding:70px 0;
+}
+
+.certificates .section-heading h2{
+font-size:34px;
+}
+
+.certificates .section-heading p{
+font-size:15px;
+}
+
+.certificate-card{
+min-width:150px;
+height:130px;
+}
+
+.certificate-icon{
+width:54px;
+height:54px;
+margin-bottom:15px;
+}
+
+.certificate-card h4{
+font-size:16px;
+}
+
+.marquee-track{
+gap:16px;
+animation-duration:20s;
+}
+
+.reverse-track{
+animation-duration:20s;
+}
+
+.marquee::before,
+.marquee::after{
+width:60px;
+}
+
+}
+
+/*==========================================
+SMALL MOBILE
+==========================================*/
+
+@media(max-width:480px){
+
+.certificates .section-heading h2{
+font-size:30px;
+}
+
+.certificates .section-heading span{
+font-size:13px;
+}
+
+.certificate-card{
+min-width:130px;
+height:120px;
+border-radius:12px;
+}
+
+.certificate-icon{
+width:48px;
+height:48px;
+border-radius:14px;
+}
+
+.certificate-card h4{
+font-size:15px;
+}
+
+.marquee-track{
+animation-duration:18s;
+}
+
+.reverse-track{
+animation-duration:18s;
+}
+
+}
