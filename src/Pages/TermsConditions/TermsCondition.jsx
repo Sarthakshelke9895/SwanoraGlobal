@@ -119,8 +119,7 @@ const TermsConditions = () => {
 
             <p>
               These Terms shall be governed by the laws of India. Any disputes
-              shall be subject to the jurisdiction of the courts in Surat,
-              Gujarat.
+              shall be subject to the jurisdiction of the courts in Maharshtra,India
             </p>
 
           </section>

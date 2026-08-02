@@ -55,9 +55,7 @@ Swanora Global is a trusted exporter of premium Indian agricultural products, de
 
 </p>
 
-<button className="about-btn">
-Read More About Us
-</button>
+
 
 </div>
 

@@ -199,23 +199,26 @@ const Footer = () => {
                         <div className="footer-services">
 
                             <a href="/">
-                                Agricultural Products
+                                Agricultural Products Export 
                             </a>
 
                             <a href="/">
-                                Textiles & Fabrics
+                                PRoduct Sourcing
                             </a>
 
                             <a href="/">
-                                Engineering Goods
+                                Export Packaging
                             </a>
 
                             <a href="/">
-                                Handicrafts
+                                Qaulity Inspection
                             </a>
 
                             <a href="/">
-                                Other Products
+                                Global Logistics and Shipping
+                            </a>
+                            <a href="/">
+                                Export Documentation
                             </a>
 
                         </div>
@@ -234,7 +237,7 @@ const Footer = () => {
 
                         <div className="footer-contact">
 
-                            <a href="tel:+919876543210">
+                            <a href="tel:+918600421881">
 
                                 <FaPhoneAlt />
 
@@ -254,7 +257,7 @@ const Footer = () => {
 
                             </a>
 
-                            <div>
+                            <div className="address">
 
                                 <FaMapMarkerAlt />
 

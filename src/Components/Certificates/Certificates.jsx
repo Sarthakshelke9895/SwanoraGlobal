@@ -14,10 +14,7 @@ const certificates = [
     title: "FDA",
     image: "https://cdn.worldvectorlogo.com/logos/fda.svg"
   },
-  {
-    title: "IEC",
-    image: "https://cdn.worldvectorlogo.com/logos/iec.svg"
-  },
+ 
   {
     title: "ISO Certified",
     image: "https://cdn.worldvectorlogo.com/logos/iso.svg"

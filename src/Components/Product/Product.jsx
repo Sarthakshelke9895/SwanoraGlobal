@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Product.css";
-import { FaArrowRight } from "react-icons/fa";
 import {
+  FaArrowRight,
+  FaArrowLeft,
   FaPepperHot,
   FaAppleAlt,
   FaSeedling,
@@ -10,12 +11,18 @@ import {
   FaGlobeAsia
 } from "react-icons/fa";
 
+import Image1 from '../../Assets/1.png';
+import Image2 from '../../Assets/2.png';
+import Image3 from '../../Assets/3.png';
+import Image4 from '../../Assets/4.png';
+import Image5 from '../../Assets/5.png';
+import Image6 from '../../Assets/6.png';
+
 const products = [
   {
     icon: <FaPepperHot />,
     title: "Spices",
-    image:
-      "https://images.unsplash.com/photo-1532336414038-cf19250c5757?auto=format&fit=crop&w=1200&q=80",
+    image:Image1,
     description:
       "Premium-quality Indian spices sourced directly from trusted growers across India.",
     products: [
@@ -25,12 +32,10 @@ const products = [
       "Red Chilli Powder"
     ]
   },
-
   {
     icon: <FaAppleAlt />,
     title: "Fresh Fruits",
-    image:
-      "https://images.unsplash.com/photo-1610832958506-aa56368176cf?auto=format&fit=crop&w=1200&q=80",
+    image:Image2,
     description:
       "Fresh Indian fruits carefully selected to maintain freshness and export quality.",
     products: [
@@ -40,12 +45,10 @@ const products = [
       "Semi Husked Coconut"
     ]
   },
-
   {
     icon: <FaSeedling />,
     title: "Pulses",
-    image:
-      "https://images.unsplash.com/photo-1515543904379-3d757afe72e2?auto=format&fit=crop&w=1200&q=80",
+    image:Image3,
     description:
       "Nutritious Indian pulses processed under strict quality standards for international markets.",
     products: [
@@ -57,12 +60,10 @@ const products = [
       "Kidney Beans (Rajma)"
     ]
   },
-
   {
     icon: <FaLeaf />,
     title: "Cereals & Grains",
-    image:
-      "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1200&q=80",
+    image:Image4,
     description:
       "High-quality cereals and grains exported to meet global food standards.",
     products: [
@@ -74,12 +75,10 @@ const products = [
       "Pearl Millet (Bajra)"
     ]
   },
-
   {
     icon: <FaSnowflake />,
     title: "Frozen Foods",
-    image:
-      "https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=1200&q=80",
+    image:Image5, 
     description:
       "Frozen vegetables and fruits preserved using advanced freezing technology.",
     products: [
@@ -90,12 +89,10 @@ const products = [
       "Frozen Mango"
     ]
   },
-
   {
     icon: <FaGlobeAsia />,
     title: "Other Agricultural Products",
-    image:
-      "https://images.unsplash.com/photo-1461354464878-ad92f492a5a0?auto=format&fit=crop&w=1200&q=80",
+    image:Image6,
     description:
       "A diverse range of agricultural commodities sourced from reliable suppliers across India.",
     products: [
@@ -112,18 +109,20 @@ const products = [
 ];
 
 const Products = () => {
+  const [activeCard, setActiveCard] = useState(null);
+
+  const toggleCard = (index) => {
+    setActiveCard((prev) => (prev === index ? null : index));
+  };
+
   return (
     <section
       className="products"
       id="products"
     >
       <div className="container">
-
         <div className="section-heading">
-
-          <span>
-            PRODUCT PORTFOLIO
-          </span>
+          <span>PRODUCT PORTFOLIO</span>
 
           <h2>
             Premium Indian Agricultural Products
@@ -134,96 +133,83 @@ const Products = () => {
             products from India to international markets with
             reliability, consistency and global quality standards.
           </p>
-
         </div>
 
         <div className="products-grid">
+          {products.map((item, index) => {
+            const isOpen = activeCard === index;
 
-          {products.map((item, index) => (
+            return (
+              <div
+                key={index}
+                className={`product-card ${isOpen ? "active" : ""}`}
+              >
+                <img
+                  src={item.image}
+                  alt={item.title}
+                />
 
-            <div
-              className="product-card"
-              key={index}
-            >
+                <div
+                  className={`product-overlay ${
+                    isOpen ? "show" : ""
+                  }`}
+                >
+                  <div className="overlay-header">
+                    <div className="overlay-heading">
+                      <div className="overlay-icon">
+                        {item.icon}
+                      </div>
 
-              <img
-                src={item.image}
-                alt={item.title}
-              />
+                      <div className="overlay-title">
+                        <h3>{item.title}</h3>
 
-              <div className="product-overlay">
+                        <span>
+                          {item.products.length} Products
+                        </span>
+                      </div>
+                    </div>
 
-                <div className="overlay-top">
-
-                  <div className="overlay-icon">
-
-                    {item.icon}
-
+                    <button
+                      className="overlay-arrow"
+                      onClick={() => toggleCard(index)}
+                      aria-label={
+                        isOpen
+                          ? "Close Product"
+                          : "Open Product"
+                      }
+                    >
+                      {isOpen ? (
+                        <FaArrowLeft />
+                      ) : (
+                        <FaArrowRight />
+                      )}
+                    </button>
                   </div>
 
-                  <h3>
+                  <div
+                    className={`overlay-content ${
+                      isOpen ? "show" : ""
+                    }`}
+                  >
+                    <p className="overlay-description">
+                      {item.description}
+                    </p>
 
-                    {item.title}
+                    <div className="overlay-divider"></div>
 
-                  </h3>
-
+                    <ul className="overlay-list">
+                      {item.products.map((product, i) => (
+                        <li key={i}>
+                          {product}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
                 </div>
-
-                <p className="overlay-description">
-
-                  {item.description}
-
-                </p>
-
-                <div className="overlay-divider"></div>
-
-                <ul className="overlay-list">
-
-                  {item.products.map((product, i) => (
-
-                    <li key={i}>
-
-                      {product}
-
-                    </li>
-
-                  ))}
-
-                </ul>
-
-             
               </div>
-
-              <div className="product-bottom">
-
-                <div className="product-name">
-
-                  <h4>
-
-                    {item.title}
-
-                  </h4>
-
-                  <span>
-
-                    {item.products.length} Products
-
-                  </span>
-
-                </div>
-
-                <FaArrowRight />
-
-              </div>
-
-            </div>
-
-          ))}
-
+            );
+          })}
         </div>
-
-  
-
       </div>
     </section>
   );
