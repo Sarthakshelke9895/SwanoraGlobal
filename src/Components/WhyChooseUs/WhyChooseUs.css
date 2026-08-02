@@ -56,6 +56,7 @@ color:var(--text);
 padding:15px 35px;
 background:var(--primary);
 color:#fff;
+border-radius: 8px;
 transition:var(--transition);
 }
 
@@ -64,6 +65,10 @@ background:var(--gold);
 }
 
 @media(max-width:992px){
+    .why-choose{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
 
 .why-container{
 grid-template-columns:1fr;
@@ -71,6 +76,22 @@ grid-template-columns:1fr;
 
 .why-list{
 grid-template-columns:1fr;
+}
+.why-image{
+    display: none;
+}
+.why-content h2{
+    font-size: 1.8rem;
+    margin: 0px;
+}
+.why-content p{
+    text-align: justify;
+    hyphens: auto;
+    font-size: 0.9rem;
+}
+.section-tag{
+    margin: 0px;
+    margin-top: 20px;
 }
 
 }

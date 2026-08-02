@@ -411,9 +411,16 @@ SMALL MOBILE
 @media(max-width:480px){
 
 .testimonials .section-heading h2{
-font-size:30px;
+font-size:28px;
+margin-bottom: 5px;
 }
 
+.testimonials .section-heading p{
+    font-size: 12px;
+}
+.testimonials .section-heading span{
+    margin-bottom: 1px;
+}
 .testimonial-card{
 padding:24px 20px;
 }

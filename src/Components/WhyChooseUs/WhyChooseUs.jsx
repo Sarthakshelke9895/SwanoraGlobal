@@ -1,6 +1,7 @@
 import React from "react";
 import "./WhyChooseUs.css";
 import { FaCheckCircle } from "react-icons/fa";
+import whyimage from "../../Assets/whyimage.jpg"
 
 const points = [
   "Premium Quality Products",
@@ -20,7 +21,7 @@ const WhyChooseUs = () => {
         <div className="why-image">
 
           <img
-            src="https://images.unsplash.com/photo-1565793298595-6a879b1d9492?auto=format&fit=crop&w=1000&q=80"
+            src={whyimage}
             alt="Export"
           />
 
@@ -34,7 +35,7 @@ const WhyChooseUs = () => {
 
           <h2>
             Your Trusted Export
-            <br />
+            
             Partner Worldwide
           </h2>
 
@@ -60,9 +61,7 @@ const WhyChooseUs = () => {
 
           </div>
 
-          <button>
-            Read More
-          </button>
+
 
         </div>
 

@@ -51,7 +51,8 @@ Partner from India
 </h2>
 
 <p>
-We are committed to providing premium quality products with international standards, competitive pricing and timely delivery to customers across the globe. Our focus is to build long-term business relationships through trust, transparency and excellence.
+Swanora Global is a trusted exporter of premium Indian agricultural products, delivering quality spices, fresh fruits, cereals, pulses, frozen foods, and other commodities to global markets. We are committed to international quality standards, reliable service, and timely deliveries while building long-term partnerships through trust, transparency, and excellence. Our vision is to showcase India's agricultural strength and create lasting value for customers worldwide.
+
 </p>
 
 <button className="about-btn">

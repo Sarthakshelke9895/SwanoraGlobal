@@ -41,14 +41,12 @@ const Certificates = () => {
           </span>
 
           <h2>
-            International Standards
-            <br />
-            & Certifications
+            International Standards & Certifications
           </h2>
 
           <p>
             Committed to maintaining international quality standards and
-            trusted export practices across global markets.
+            trusted export practices
           </p>
 
         </div>

@@ -11,22 +11,22 @@ const process = [
   {
     icon: <FaClipboardList />,
     title: "Inquiry",
-    description: "Share your requirements and product specifications."
+    description: "Share requirements & product specifications"
   },
   {
     icon: <FaSearch />,
     title: "Quality Check",
-    description: "Products undergo strict quality inspection."
+    description: "Products undergo strict quality inspection"
   },
   {
     icon: <FaBoxOpen />,
     title: "Packaging",
-    description: "Safe export packaging following global standards."
+    description: "Safe export following global standards"
   },
   {
     icon: <FaShip />,
     title: "Global Delivery",
-    description: "Fast and secure worldwide shipping."
+    description: "Fast and secure worldwide shipping"
   }
 ];
 

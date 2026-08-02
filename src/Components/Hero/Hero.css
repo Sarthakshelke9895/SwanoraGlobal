@@ -532,9 +532,10 @@ MOBILE
 
 @media(max-width:768px){
 
-.hero{
-padding:130px 0 70px;
-}
+    .hero-container{
+        margin-top: -80px;
+     }
+
 
 .hero-title{
 font-size:42px;

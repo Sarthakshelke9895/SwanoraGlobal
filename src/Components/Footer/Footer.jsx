@@ -1,6 +1,7 @@
 import React from "react";
 import "./Footer.css";
 import logo from "../../Assets/Logo.png";
+import { Link as RouterLink } from "react-router-dom";
 
 import {
     FaFacebookF,
@@ -118,7 +119,7 @@ const Footer = () => {
                         QUICK LINKS
                     ========================================== */}
 
-                    <div className="footer-column">
+                    <div className="footer-column  footer-links-column">
 
                         <h3 className="footer-title">
                             Quick Links
@@ -189,7 +190,7 @@ const Footer = () => {
                         SERVICES
                     ========================================== */}
 
-                    <div className="footer-column">
+                    <div className="footer-column footer-links-column">
 
                         <h3 className="footer-title">
                             Services
@@ -225,7 +226,7 @@ const Footer = () => {
                         CONTACT
                     ========================================== */}
 
-                    <div className="footer-column">
+                    <div className="footer-column footer-links-column">
 
                         <h3 className="footer-title">
                             Contact
@@ -238,7 +239,7 @@ const Footer = () => {
                                 <FaPhoneAlt />
 
                                 <span>
-                                    +91 98765 43210
+                                    +91  8600421881
                                 </span>
 
                             </a>
@@ -258,7 +259,7 @@ const Footer = () => {
                                 <FaMapMarkerAlt />
 
                                 <span>
-                                    Surat, Gujarat, India
+                                    Flat No.305, Morya Corner, Near Suryaganga Society, Dhayari, Pune 411041
                                 </span>
 
                             </div>
@@ -288,15 +289,15 @@ const Footer = () => {
 
                     <div className="footer-policy">
 
-                        <a href="/">
-                            Privacy Policy
-                        </a>
-
+                       <RouterLink to="/privacy-policy">
+                        Privacy Policy
+                        </RouterLink>
+                        
                         <span>|</span>
 
-                        <a href="/">
-                            Terms & Conditions
-                        </a>
+                        <RouterLink to="/terms-and-conditions">
+                        Terms & Conditions
+                        </RouterLink>
 
                     </div>
 

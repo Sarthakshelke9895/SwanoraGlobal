@@ -45,16 +45,14 @@ const Hero = () => {
               Explore Products
             </Link>
 
-            <Link
-              to="contact"
-              smooth={true}
-              duration={700}
-              offset={-90}
-              className="hero-btn secondary-btn"
-            >
-              <FaDownload />
-              Download Brochure
-            </Link>
+            <a
+            href="/Sarthak_Shelke_Resume.pdf"
+            download="Swanora-Global-Brochure.pdf"
+            className="hero-btn secondary-btn"
+          >
+            <FaDownload />
+            Download Brochure
+          </a>
 
           </div>
 

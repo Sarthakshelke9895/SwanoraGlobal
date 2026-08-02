@@ -19,7 +19,7 @@ const counterData = [
   },
   {
     icon: <FaBoxOpen />,
-    end: 500,
+    end: 100,
     suffix: "+",
     title: "Products",
     subtitle: "Available"

@@ -46,17 +46,17 @@ const Navbar = () => {
           <div className="top-left">
             <div className="top-item">
               <FaMapMarkerAlt />
-              <span>Surat, Gujarat, India</span>
+              <span>Flat No.305, Morya Corner, Near Suryaganga Society, Dhayari, Pune 411041</span>
             </div>
 
             <div className="top-item">
               <MdEmail />
-              <span>info@company.com</span>
+              <span>info@swanoraglobal.com</span>
             </div>
 
             <div className="top-item">
               <FaPhoneAlt />
-              <span>+91 98765 43210</span>
+              <span>+91 8600421881</span>
             </div>
           </div>
 

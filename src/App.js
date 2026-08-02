@@ -1,35 +1,33 @@
-import Navbar from '../src/Components/Navbar/Navbar';
-import Hero from './Components/Hero/Hero';
-import FeatureStrip from './Components/FeatureStrip/FeatureStrip'
-import About from './Components/About/About';
-import Product from './Components/Product/Product'
-import Counter from './Components/Counter/Counter';
-import WhyChooseUs from './Components/WhyChooseUs/WhyChooseUs';
-import Process from './Components/Process/Process';
-import Services from './Components/Services/Services';
-import Certificates from './Components/Certificates/Certificates';
-import Testimonials from './Components/Testimonials/Testimonials';
-import Contact from './Components/Contact/Contact';
-import Footer from './Components/Footer/Footer';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import Home from "./Pages/Home/Home";
+import PrivacyPolicy from "./Pages/PrivacyPolicy/PrivacyPolicy";
+import TermsConditions from "./Pages/TermsConditions/TermsCondition";
 
 function App() {
   return (
-    <>
-      <Navbar/>
-      <Hero/>
-      <FeatureStrip/>
-      <About/>
-      <Services/>
-      <Product/>
-      <Counter/>
-      <WhyChooseUs/>
-      <Process/>
-      <Certificates/>
-      <Testimonials/>
-      <Contact/>
-      <Footer/>
-    
-    </>
+    <BrowserRouter>
+
+      <Routes>
+
+        <Route
+          path="/"
+          element={<Home />}
+        />
+
+        <Route
+          path="/privacy-policy"
+          element={<PrivacyPolicy />}
+        />
+
+        <Route
+          path="/terms-and-conditions"
+          element={<TermsConditions />}
+        />
+
+      </Routes>
+
+    </BrowserRouter>
   );
 }
 

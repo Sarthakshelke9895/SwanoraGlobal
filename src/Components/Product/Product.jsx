@@ -1,93 +1,232 @@
 import React from "react";
 import "./Product.css";
 import { FaArrowRight } from "react-icons/fa";
+import {
+  FaPepperHot,
+  FaAppleAlt,
+  FaSeedling,
+  FaLeaf,
+  FaSnowflake,
+  FaGlobeAsia
+} from "react-icons/fa";
 
-const products=[
-{
-title:"Agricultural Products",
-image:"https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=700&q=80"
-},
-{
-title:"Textiles & Fabrics",
-image:"https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=700&q=80"
-},
-{
-title:"Handicrafts",
-image:"https://images.unsplash.com/photo-1517705008128-361805f42e86?auto=format&fit=crop&w=700&q=80"
-},
-{
-title:"Engineering Goods",
-image:"https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?auto=format&fit=crop&w=700&q=80"
-},
-{
-title:"Other Products",
-image:"https://images.unsplash.com/photo-1470337458703-46ad1756a187?auto=format&fit=crop&w=700&q=80"
-}
+const products = [
+  {
+    icon: <FaPepperHot />,
+    title: "Spices",
+    image:
+      "https://images.unsplash.com/photo-1532336414038-cf19250c5757?auto=format&fit=crop&w=1200&q=80",
+    description:
+      "Premium-quality Indian spices sourced directly from trusted growers across India.",
+    products: [
+      "Turmeric Fingers",
+      "Turmeric Powder",
+      "Whole Red Chilli",
+      "Red Chilli Powder"
+    ]
+  },
+
+  {
+    icon: <FaAppleAlt />,
+    title: "Fresh Fruits",
+    image:
+      "https://images.unsplash.com/photo-1610832958506-aa56368176cf?auto=format&fit=crop&w=1200&q=80",
+    description:
+      "Fresh Indian fruits carefully selected to maintain freshness and export quality.",
+    products: [
+      "Pomegranate",
+      "Banana",
+      "Fresh Grapes",
+      "Semi Husked Coconut"
+    ]
+  },
+
+  {
+    icon: <FaSeedling />,
+    title: "Pulses",
+    image:
+      "https://images.unsplash.com/photo-1515543904379-3d757afe72e2?auto=format&fit=crop&w=1200&q=80",
+    description:
+      "Nutritious Indian pulses processed under strict quality standards for international markets.",
+    products: [
+      "Chickpeas",
+      "Green Gram (Moong)",
+      "Black Gram (Urad)",
+      "Pigeon Pea (Toor)",
+      "Red Lentils (Masoor)",
+      "Kidney Beans (Rajma)"
+    ]
+  },
+
+  {
+    icon: <FaLeaf />,
+    title: "Cereals & Grains",
+    image:
+      "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1200&q=80",
+    description:
+      "High-quality cereals and grains exported to meet global food standards.",
+    products: [
+      "Basmati Rice",
+      "Non-Basmati Rice",
+      "Wheat",
+      "Maize (Corn)",
+      "Sorghum (Jowar)",
+      "Pearl Millet (Bajra)"
+    ]
+  },
+
+  {
+    icon: <FaSnowflake />,
+    title: "Frozen Foods",
+    image:
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=1200&q=80",
+    description:
+      "Frozen vegetables and fruits preserved using advanced freezing technology.",
+    products: [
+      "Frozen Green Peas",
+      "Frozen Sweet Corn",
+      "Frozen Mixed Vegetables",
+      "Frozen Okra",
+      "Frozen Mango"
+    ]
+  },
+
+  {
+    icon: <FaGlobeAsia />,
+    title: "Other Agricultural Products",
+    image:
+      "https://images.unsplash.com/photo-1461354464878-ad92f492a5a0?auto=format&fit=crop&w=1200&q=80",
+    description:
+      "A diverse range of agricultural commodities sourced from reliable suppliers across India.",
+    products: [
+      "Garlic",
+      "Ginger",
+      "Onion",
+      "Tamarind",
+      "Fresh Lemon",
+      "Groundnuts",
+      "Coriander Seeds",
+      "Cumin Seeds"
+    ]
+  }
 ];
 
-const Products=()=>{
+const Products = () => {
+  return (
+    <section
+      className="products"
+      id="products"
+    >
+      <div className="container">
 
-return(
+        <div className="section-heading">
 
-<section className="products" id="products">
+          <span>
+            PRODUCT PORTFOLIO
+          </span>
 
-<div className="container">
+          <h2>
+            Premium Indian Agricultural Products
+          </h2>
 
-<div className="section-heading">
+          <p>
+            We export a wide range of premium-quality agricultural
+            products from India to international markets with
+            reliability, consistency and global quality standards.
+          </p>
 
-<span>OUR PRODUCTS</span>
+        </div>
 
-<h2>
-Premium Products, Global Standards
-</h2>
+        <div className="products-grid">
 
-</div>
+          {products.map((item, index) => (
 
-<div className="products-grid">
+            <div
+              className="product-card"
+              key={index}
+            >
 
-{
+              <img
+                src={item.image}
+                alt={item.title}
+              />
 
-products.map((item,index)=>(
+              <div className="product-overlay">
 
-<div className="product-card" key={index}>
+                <div className="overlay-top">
 
-<img
-src={item.image}
-alt={item.title}
-/>
+                  <div className="overlay-icon">
 
-<div className="product-content">
+                    {item.icon}
 
-<h4>{item.title}</h4>
+                  </div>
 
-<FaArrowRight/>
+                  <h3>
 
-</div>
+                    {item.title}
 
-</div>
+                  </h3>
 
-))
+                </div>
 
-}
+                <p className="overlay-description">
 
-</div>
+                  {item.description}
 
-<div className="products-btn">
+                </p>
 
-<button>
+                <div className="overlay-divider"></div>
 
-View All Products
+                <ul className="overlay-list">
 
-</button>
+                  {item.products.map((product, i) => (
 
-</div>
+                    <li key={i}>
 
-</div>
+                      {product}
 
-</section>
+                    </li>
 
-);
+                  ))}
 
+                </ul>
+
+             
+              </div>
+
+              <div className="product-bottom">
+
+                <div className="product-name">
+
+                  <h4>
+
+                    {item.title}
+
+                  </h4>
+
+                  <span>
+
+                    {item.products.length} Products
+
+                  </span>
+
+                </div>
+
+                <FaArrowRight />
+
+              </div>
+
+            </div>
+
+          ))}
+
+        </div>
+
+  
+
+      </div>
+    </section>
+  );
 };
 
 export default Products;

@@ -12,42 +12,41 @@ import {
 const services = [
   {
     icon: <FaGlobeAsia />,
-    title: "Export Consulting",
+    title: "Agricultural Product Export",
     description:
-      "Professional guidance for international trade, documentation and export planning."
-  },
-  {
-    icon: <FaShippingFast />,
-    title: "Global Logistics",
-    description:
-      "Reliable worldwide transportation with efficient shipping solutions."
-  },
-  {
-    icon: <FaBoxOpen />,
-    title: "Product Sourcing",
-    description:
-      "High-quality sourcing from trusted manufacturers across India."
-  },
-  {
-    icon: <FaFileSignature />,
-    title: "Documentation",
-    description:
-      "Complete export documentation and compliance support."
-  },
-  {
-    icon: <FaWarehouse />,
-    title: "Supply Chain",
-    description:
-      "Efficient warehousing, inventory management and distribution."
+      "We export premium-quality Indian spices, fresh fruits, pulses, cereals, grains, frozen foods, and other agricultural products to customers worldwide."
   },
   {
     icon: <FaHandshake />,
-    title: "Customer Support",
+    title: "Product Sourcing",
     description:
-      "Dedicated support throughout every stage of your export journey."
+      "We source products directly from trusted farmers, FPOs, and certified processing partners across India to ensure consistent quality and competitive pricing."
+  },
+  {
+    icon: <FaBoxOpen />,
+    title: "Export Packaging",
+    description:
+      "Customized export packaging solutions including bulk packaging, retail-ready packs, private labeling, and custom branding based on customer requirements."
+  },
+  {
+    icon: <FaFileSignature />,
+    title: "Quality Inspection",
+    description:
+      "Every shipment undergoes strict quality inspections to meet international standards for freshness, hygiene, safety, and product consistency."
+  },
+  {
+    icon: <FaShippingFast />,
+    title: "Global Logistics & Shipping",
+    description:
+      "Complete export logistics including container booking, customs clearance, freight coordination, and timely international delivery."
+  },
+  {
+    icon: <FaWarehouse />,
+    title: "Export Documentation",
+    description:
+      "Preparation of all essential export documents, certifications, customs paperwork, and buyer-specific documentation for smooth international trade."
   }
 ];
-
 const Services = () => {
   return (
     <section className="services" id="services">
@@ -59,14 +58,13 @@ const Services = () => {
           <span>OUR SERVICES</span>
 
           <h2>
-            Complete Export Solutions
-            <br />
+            Export Solutions
             For Global Business
           </h2>
 
           <p>
-            We provide comprehensive export services that help businesses
-            expand confidently into international markets.
+            We provide export services that help businesses
+            expand confidently into international markets
           </p>
 
         </div>
@@ -77,17 +75,19 @@ const Services = () => {
 
             <div className="service-card" key={index}>
 
+            <div className="service-header">
+
               <div className="service-icon">
                 {service.icon}
               </div>
 
               <h3>{service.title}</h3>
 
-              <p>{service.description}</p>
+            </div>
 
-              <button>
-                Learn More →
-              </button>
+            <p>{service.description}</p>
+
+         
 
             </div>
 

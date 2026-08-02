@@ -115,5 +115,16 @@ grid-template-columns:1fr;
 .about-left h2{
 font-size:32px;
 }
+.about-feature h4{
+    font-size: 16px;
+}
+.about-feature p{
+    font-size: 12.5px;
+}
+.about-icon{
+    height: 45px;
+    width: 45px;
+    border-radius: 4px;
+}
 
 }

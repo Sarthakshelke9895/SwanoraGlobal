@@ -14,24 +14,45 @@ const Testimonials = () => {
   const [current, setCurrent] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
 
-  const cardsPerView = 3;
+ const [cardsPerView, setCardsPerView] = useState(3);
+
+useEffect(() => {
+  const updateCardsPerView = () => {
+    if (window.innerWidth <= 768) {
+      setCardsPerView(1);
+    } else if (window.innerWidth <= 992) {
+      setCardsPerView(2);
+    } else {
+      setCardsPerView(3);
+    }
+  };
+
+  updateCardsPerView();
+
+  window.addEventListener("resize", updateCardsPerView);
+
+  return () => window.removeEventListener("resize", updateCardsPerView);
+}, []);
 
   const duplicatedTestimonials = [
     ...testimonials,
     ...testimonials
   ];
 
-  const nextSlide = () => {
-    setCurrent((prev) => prev + 1);
-  };
-
-  const prevSlide = () => {
-    setCurrent((prev) =>
-      prev === 0
-        ? testimonials.length - 1
-        : prev - 1
-    );
-  };
+const nextSlide = () => {
+  setCurrent((prev) =>
+    prev >= testimonials.length - cardsPerView
+      ? 0
+      : prev + 1
+  );
+};
+const prevSlide = () => {
+  setCurrent((prev) =>
+    prev === 0
+      ? testimonials.length - cardsPerView
+      : prev - 1
+  );
+};
 
   useEffect(() => {
 
@@ -45,19 +66,23 @@ const Testimonials = () => {
 
   }, [current]);
 
-  useEffect(() => {
+useEffect(() => {
 
-    if (isPaused) return;
+  if (isPaused) return;
 
-    const interval = setInterval(() => {
+  const interval = setInterval(() => {
 
-      nextSlide();
+    setCurrent(prev =>
+      prev >= testimonials.length - cardsPerView
+        ? 0
+        : prev + 1
+    );
 
-    }, 5000);
+  }, 5000);
 
-    return () => clearInterval(interval);
+  return () => clearInterval(interval);
 
-  }, [isPaused]);
+}, [isPaused, cardsPerView]);
 
   return (
 

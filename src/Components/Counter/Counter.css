@@ -79,7 +79,7 @@ row-gap:40px;
 @media(max-width:576px){
 
 .counter-container{
-grid-template-columns:1fr;
+grid-template-columns:repeat(2,1fr);
 }
 
 .counter-item h2{

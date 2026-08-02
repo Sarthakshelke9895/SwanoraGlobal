@@ -1,0 +1,196 @@
+/*==========================================
+LEGAL PAGE
+==========================================*/
+
+.policy-page{
+padding:120px 0 0px;
+background:#f7f8fa;
+min-height:100vh;
+}
+
+/*==========================================
+HEADER
+==========================================*/
+
+.policy-header{
+text-align:center;
+margin-bottom:40px;
+}
+
+.policy-header span{
+display:inline-block;
+font-size:13px;
+font-weight:600;
+letter-spacing:2px;
+text-transform:uppercase;
+color:var(--gold);
+margin-bottom:12px;
+}
+
+.policy-header h1{
+font-size:44px;
+font-weight:700;
+color:var(--primary);
+margin-bottom:12px;
+}
+
+.policy-header p{
+font-size:15px;
+color:var(--text-light);
+}
+
+/*==========================================
+CONTENT
+==========================================*/
+
+.policy-content{
+max-width:900px;
+margin:auto;
+background:#fff;
+padding:40px;
+border-radius:16px;
+border:1px solid rgba(0,0,0,.05);
+box-shadow:0 15px 35px rgba(0,0,0,.05);
+}
+
+
+
+.policy-content section{
+padding:20px 0;
+border-bottom:1px solid rgba(0,0,0,.06);
+}
+
+.policy-content section:first-child{
+padding-top:0;
+}
+
+.policy-content section:last-child{
+padding-bottom:0;
+border-bottom:none;
+}
+/*==========================================
+HEADINGS
+==========================================*/
+
+.policy-content h2{
+font-size:24px;
+font-weight:600;
+color:var(--primary);
+margin-bottom:12px;
+padding-bottom:10px;
+border-bottom:1px solid rgba(0,0,0,.08);
+}
+
+.policy-content h3{
+font-size:18px;
+font-weight:600;
+color:var(--primary);
+margin:18px 0 10px;
+}
+
+/*==========================================
+TEXT
+==========================================*/
+
+.policy-content p{
+font-size:15px;
+line-height:1.8;
+color:var(--text-light);
+margin-bottom:12px;
+}
+
+.policy-content ul{
+padding-left:22px;
+margin-top:8px;
+}
+
+.policy-content li{
+font-size:15px;
+line-height:1.8;
+color:var(--text-light);
+margin-bottom:8px;
+}
+
+/*==========================================
+CONTACT
+==========================================*/
+
+.policy-content strong{
+color:var(--primary);
+}
+
+/*==========================================
+TABLET
+==========================================*/
+
+@media(max-width:768px){
+
+.policy-page{
+padding:100px 0 50px;
+}
+
+.policy-header{
+margin-bottom:30px;
+}
+
+.policy-header h1{
+font-size:34px;
+}
+
+.policy-content{
+padding:28px 24px;
+}
+
+.policy-content h2{
+font-size:22px;
+}
+
+.policy-content h3{
+font-size:17px;
+}
+
+.policy-content p,
+.policy-content li{
+font-size:14px;
+}
+
+}
+
+/*==========================================
+MOBILE
+==========================================*/
+
+@media(max-width:480px){
+
+.policy-page{
+padding:90px 0 40px;
+}
+
+.policy-header h1{
+font-size:28px;
+}
+
+.policy-header p{
+font-size:14px;
+}
+
+.policy-content{
+padding:22px 18px;
+border-radius:12px;
+}
+
+.policy-content h2{
+font-size:20px;
+}
+
+.policy-content h3{
+font-size:16px;
+}
+
+.policy-content p,
+.policy-content li{
+font-size:14px;
+line-height:1.7;
+}
+
+}
