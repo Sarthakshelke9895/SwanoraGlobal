@@ -104,9 +104,17 @@ const Navbar = () => {
               </li>
             ))}
 
-            <a href="#contact" className="quote-btn">
-              Get Quote
-            </a>
+            <button
+            className="quote-btn"
+            onClick={() =>
+              window.open(
+                "https://wa.me/918600421881?text=Hello%20Swanora%20Global,%20I%20would%20like%20to%20get%20a%20quotation.",
+                "_blank"
+              )
+            }
+          >
+            Get Quote
+          </button>
           </ul>
 
           <div

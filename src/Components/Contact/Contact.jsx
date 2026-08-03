@@ -9,6 +9,7 @@ import {
   FaInstagram,
   FaLinkedinIn
 } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -84,6 +85,41 @@ const Contact = () => {
   return (
     <section className="contact" id="contact">
       <div className="container">
+        {/*==========================================
+CONTACT STRIP
+==========================================*/}
+
+<div className="contact-strip">
+
+    <div className="contact-strip-content">
+
+        <div>
+
+        
+
+            <h3>
+                Ready To Expand Your Business Globally?
+            </h3>
+
+            <p>
+                Connect with our export experts on WhatsApp and get a quick response for your enquiries.
+            </p>
+
+        </div>
+
+        <a
+    href="https://wa.me/918600421881?text=Hello%20Swanora%20Global,%20I%20would%20like%20to%20know%20more%20about%20your%20export%20services."
+    target="_blank"
+    rel="noopener noreferrer"
+    className="whatsapp-btn"
+>
+    <FaWhatsapp/>
+    <span>Chat On WhatsApp</span>
+</a>
+
+    </div>
+
+</div>
         <div className="section-heading">
           <span>CONTACT US</span>
 

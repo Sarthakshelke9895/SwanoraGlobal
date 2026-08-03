@@ -119,7 +119,7 @@ const TermsConditions = () => {
 
             <p>
               These Terms shall be governed by the laws of India. Any disputes
-              shall be subject to the jurisdiction of the courts in Maharshtra,India
+              shall be subject to the jurisdiction of the courts in Maharashtra, India
             </p>
 
           </section>
@@ -130,7 +130,7 @@ const TermsConditions = () => {
 
             <p><strong>Swanora Global</strong></p>
             <p>Email: info@swanoraglobal.com</p>
-            <p>Surat, Gujarat, India</p>
+            <p>Pune, Maharashtra, India</p>
 
           </section>
 

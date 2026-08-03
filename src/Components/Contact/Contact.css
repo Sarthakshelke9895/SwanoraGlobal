@@ -468,3 +468,125 @@ font-size:15px;
 }
 
 
+
+
+
+
+
+
+
+
+
+
+/*==========================================
+CONTACT STRIP
+==========================================*/
+
+.contact-strip{
+margin-bottom:70px;
+padding:40px 50px;
+border-radius:10px;
+background:linear-gradient(
+135deg,
+var(--primary),
+var(--secondary)
+);
+overflow:hidden;
+position:relative;
+}
+
+.contact-strip::before{
+content:"";
+position:absolute;
+right:-120px;
+top:-120px;
+width:260px;
+height:260px;
+border-radius:50%;
+background:rgba(255,255,255,.05);
+}
+
+.contact-strip-content{
+display:flex;
+justify-content:space-between;
+align-items:center;
+gap:40px;
+position:relative;
+z-index:2;
+}
+
+.contact-strip-tag{
+display:inline-block;
+padding:8px 18px;
+border-radius:50px;
+background:rgba(255,255,255,.12);
+color:var(--gold);
+font-size:13px;
+font-weight:600;
+letter-spacing:1px;
+margin-bottom:18px;
+}
+
+.contact-strip h3{
+font-size:34px;
+color:var(--white);
+margin-bottom:12px;
+}
+
+.contact-strip p{
+max-width:650px;
+color:rgba(255,255,255,.80);
+line-height:1.8;
+}
+
+.whatsapp-btn{
+position:relative;
+overflow:hidden;
+padding:18px 34px;
+border-radius:10px;
+background:var(--gold);
+color:var(--white);
+font-weight:600;
+white-space:nowrap;
+transition:var(--transition);
+z-index:1;
+display:flex;
+align-items:center;
+gap:10px;
+
+}
+
+
+
+
+.whatsapp-btn:hover{
+background:var(--white);
+color:var(--gold);
+}
+@media(max-width:768px){
+
+.contact-strip{
+padding:35px 25px;
+}
+
+.contact-strip-content{
+flex-direction:column;
+text-align:center;
+}
+
+.contact-strip h3{
+font-size:22px;
+}
+
+.contact-strip p{
+font-size:10px;
+}
+.whatsapp-btn{
+width:100%;
+text-align:center;
+justify-content:center;
+display:flex;
+padding:10px;
+}
+
+}
