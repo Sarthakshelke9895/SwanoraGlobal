@@ -12,28 +12,28 @@ import {
 const counterData = [
   {
     icon: <FaGlobe />,
-    end: 50,
+    end: 25,
     suffix: "+",
     title: "Countries",
     subtitle: "We Export To"
   },
   {
     icon: <FaBoxOpen />,
-    end: 100,
+    end: 30,
     suffix: "+",
     title: "Products",
     subtitle: "Available"
   },
   {
     icon: <FaUsers />,
-    end: 100,
+    end: 20,
     suffix: "+",
     title: "Satisfied",
     subtitle: "Clients"
   },
   {
     icon: <FaAward />,
-    end: 5,
+    end: 2,
     suffix: "+",
     title: "Years Of",
     subtitle: "Experience"

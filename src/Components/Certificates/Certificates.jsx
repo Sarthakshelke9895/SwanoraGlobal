@@ -1,26 +1,43 @@
 import React from "react";
 import "./Certificates.css";
-
+import Apeda from "../../Assets/apeda.png";
+import IEC from '../../Assets/IEC.png';
+import RCMC from '../../Assets/rcmc.png'
+import Spices from '../../Assets/spices.png'
 const certificates = [
   {
-    title: "ISO 9001",
-    image: "https://cdn.worldvectorlogo.com/logos/iso-1.svg"
+    title: "APEDA",
+    image:Apeda,
   },
   {
-    title: "CE",
-    image: "https://cdn.worldvectorlogo.com/logos/ce-2.svg"
+    title: "IEC (DGFT)",
+    image: IEC,
   },
   {
-    title: "FDA",
-    image: "https://cdn.worldvectorlogo.com/logos/fda.svg"
+    title: "RCMC",
+    image: RCMC,
   },
- 
   {
-    title: "ISO Certified",
-    image: "https://cdn.worldvectorlogo.com/logos/iso.svg"
+    title: "Spices Board",
+    image: Spices,
   },
- 
-
+    {
+    title: "APEDA",
+    image:Apeda,
+  },
+  {
+    title: "IEC (DGFT)",
+    image: IEC,
+  },
+  {
+    title: "RCMC",
+    image: RCMC,
+  },
+  {
+    title: "Spices Board",
+    image: Spices,
+  }
+  
 ];
 
 const Certificates = () => {

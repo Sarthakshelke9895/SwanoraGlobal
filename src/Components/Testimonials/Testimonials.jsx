@@ -180,10 +180,7 @@ useEffect(() => {
 
                   <div className="testimonial-user">
 
-                    <img
-                      src={item.image}
-                      alt={item.name}
-                    />
+                  
 
                     <div className="testimonial-info">
 
