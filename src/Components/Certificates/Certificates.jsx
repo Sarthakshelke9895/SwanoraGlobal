@@ -1,9 +1,9 @@
 import React from "react";
 import "./Certificates.css";
-import Apeda from "../../Assets/apeda.png";
-import IEC from '../../Assets/IEC.png';
-import RCMC from '../../Assets/rcmc.png'
-import Spices from '../../Assets/spices.png'
+import Apeda from "../../Assets/apeda.webp";
+import IEC from '../../Assets/IEC.webp';
+import RCMC from '../../Assets/rcmc.webp'
+import Spices from '../../Assets/spices.webp'
 const certificates = [
   {
     title: "APEDA",

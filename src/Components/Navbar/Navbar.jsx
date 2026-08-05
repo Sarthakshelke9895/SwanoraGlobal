@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Navbar.css";
-import logo from "../../Assets/Logo.png";
+import logo from "../../Assets/Logo.webp";
 import { Link } from "react-scroll";
 import {
   FaMapMarkerAlt,

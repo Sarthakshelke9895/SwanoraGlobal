@@ -1,7 +1,7 @@
 import React from "react";
 import "./Hero.css";
-import heroBg from "../../Assets/hero-backgorund.jpg";
-import logo from "../../Assets/Logo.png";
+import heroBg from "../../Assets/hero-backgorund.webp";
+import logo from "../../Assets/Logo.webp";
 import { FaArrowRight, FaDownload } from "react-icons/fa";
 import { Link } from "react-scroll";
 

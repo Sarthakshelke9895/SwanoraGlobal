@@ -13,13 +13,11 @@ position:relative;
 width:90px;
 height:90px;
 object-fit:contain;
-filter:grayscale(100%);
 opacity:.75;
 transition:.4s ease;
 }
 
 .certificate-card:hover .certificate-logo{
-filter:grayscale(0%);
 opacity:1;
 transform:scale(1.08);
 }
@@ -150,9 +148,8 @@ display:flex;
 justify-content:center;
 align-items:center;
 border-radius:18px;
-background:rgba(212,175,55,.08);
 border:2px solid rgba(212,175,55,.18);
-color:var(--gold);
+
 margin-bottom:22px;
 transition:.4s;
 }

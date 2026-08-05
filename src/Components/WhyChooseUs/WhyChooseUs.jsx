@@ -1,7 +1,7 @@
 import React from "react";
 import "./WhyChooseUs.css";
 import { FaCheckCircle } from "react-icons/fa";
-import whyimage from "../../Assets/whyimage.jpg"
+import whyimage from "../../Assets/whyimage.webp";
 
 const points = [
   "Premium Quality Products",

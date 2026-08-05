@@ -1,6 +1,6 @@
 import React from "react";
 import "./Footer.css";
-import logo from "../../Assets/Logo.png";
+import logo from "../../Assets/Logo.webp";
 import { Link as RouterLink } from "react-router-dom";
 
 import {

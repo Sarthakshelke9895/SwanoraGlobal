@@ -11,12 +11,12 @@ import {
   FaGlobeAsia
 } from "react-icons/fa";
 
-import Image1 from '../../Assets/1.png';
-import Image2 from '../../Assets/2.png';
-import Image3 from '../../Assets/3.png';
-import Image4 from '../../Assets/4.png';
-import Image5 from '../../Assets/5.png';
-import Image6 from '../../Assets/6.png';
+import Image1 from '../../Assets/1.webp';
+import Image2 from '../../Assets/2.webp';
+import Image3 from '../../Assets/3.webp';
+import Image4 from '../../Assets/4.webp';
+import Image5 from '../../Assets/5.webp';
+import Image6 from '../../Assets/6.webp';
 
 const products = [
   {
