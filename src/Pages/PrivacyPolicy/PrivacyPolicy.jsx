@@ -8,7 +8,6 @@ const PrivacyPolicy = () => {
       <div className="container">
 
         <div className="policy-header">
-          <span>LEGAL</span>
           <h1>Privacy Policy</h1>
           <p>
             Effective Date: August 2, 2026
@@ -136,7 +135,6 @@ const PrivacyPolicy = () => {
         </div>
 
       </div>
-      <Footer/>
     </section>
 
   );

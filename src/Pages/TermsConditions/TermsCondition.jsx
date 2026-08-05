@@ -7,7 +7,6 @@ const TermsConditions = () => {
 
         <div className="policy-header">
 
-          <span>LEGAL</span>
 
           <h1>Terms & Conditions</h1>
 

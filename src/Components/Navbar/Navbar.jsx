@@ -94,7 +94,7 @@ const Navbar = () => {
                   to={item.id}
                   spy={true}
                   smooth={true}
-                  offset={-90}
+                  offset={-20}
                   duration={600}
                   activeClass="active"
                   onClick={() => setMenuOpen(false)}

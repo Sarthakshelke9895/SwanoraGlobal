@@ -203,7 +203,7 @@ const Footer = () => {
                             </a>
 
                             <a href="/">
-                                PRoduct Sourcing
+                                Product Sourcing
                             </a>
 
                             <a href="/">
