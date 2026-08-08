@@ -66,51 +66,47 @@ const Footer = () => {
 
                         </div>
 
-                        <div className="footer-social">
+                    
+<div className="footer-social">
 
-                            <a
-                                href="/"
-                                target="_blank"
-                                rel="noreferrer"
-                            >
+    <a
+        href="https://www.facebook.com/share/1BfFPUs27t/"
+        target="_blank"
+        rel="noopener noreferrer"
+    >
+        <FaFacebookF />
 
-                                <FaFacebookF />
+        <span>
+            Facebook
+        </span>
+    </a>
 
-                                <span>
-                                    Facebook
-                                </span>
+    <a
+        href="https://www.instagram.com/swanora_global/"
+        target="_blank"
+        rel="noopener noreferrer"
+    >
+        <FaInstagram />
 
-                            </a>
+        <span>
+            Instagram
+        </span>
+    </a>
 
-                            <a
-                                href="/"
-                                target="_blank"
-                                rel="noreferrer"
-                            >
+    <a
+        href="https://www.linkedin.com/in/swanora-global-7ab282422/"
+        target="_blank"
+        rel="noopener noreferrer"
+    >
+        <FaLinkedinIn />
 
-                                <FaInstagram />
+        <span>
+            LinkedIn
+        </span>
+    </a>
 
-                                <span>
-                                    Instagram
-                                </span>
+</div>
 
-                            </a>
-
-                            <a
-                                href="/"
-                                target="_blank"
-                                rel="noreferrer"
-                            >
-
-                                <FaLinkedinIn />
-
-                                <span>
-                                    LinkedIn
-                                </span>
-
-                            </a>
-
-                        </div>
 
                     </div>
 

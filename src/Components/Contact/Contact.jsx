@@ -197,14 +197,21 @@ CONTACT STRIP
               </a>
             </div>
 
-            <div className="contact-map">
-              <iframe
-                title="Company Location"
-                src="https://www.google.com/maps?q=Pune,Maharashtra&output=embed"
-                loading="lazy"
-                allowFullScreen
-              />
-            </div>
+    
+<div className="contact-map">
+  <iframe
+    title="Swanora Global Location"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.871754667479!2d73.80921927549642!3d18.444131082634712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc29564688bbb2d%3A0xc9e08bf820d4d0ec!2sSwanora%20Global!5e0!3m2!1sen!2sin!4v1786165370571!5m2!1sen!2sin"
+    width="600"
+    height="450"
+    style={{ border: 0 }}
+    allowFullScreen
+    loading="lazy"
+    referrerPolicy="strict-origin-when-cross-origin"
+  />
+</div>
+
+
           </div>
 
           {/* ===========================

@@ -60,19 +60,34 @@ const Navbar = () => {
             </div>
           </div>
 
-          <div className="top-right">
-            <a href="/">
-              <FaFacebookF />
-            </a>
+      
+<div className="top-right">
+  <a
+    href="https://www.facebook.com/share/1BfFPUs27t/"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <FaFacebookF />
+  </a>
 
-            <a href="/">
-              <FaLinkedinIn />
-            </a>
+  <a
+    href="https://www.linkedin.com/in/swanora-global-7ab282422/"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <FaLinkedinIn />
+  </a>
 
-            <a href="/">
-              <FaInstagram />
-            </a>
-          </div>
+  <a
+    href="https://www.instagram.com/swanora_global/"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <FaInstagram />
+  </a>
+</div>
+
+
         </div>
       </div>
 
