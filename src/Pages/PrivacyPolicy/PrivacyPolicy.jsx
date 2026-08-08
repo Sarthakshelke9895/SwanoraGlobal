@@ -1,4 +1,3 @@
-import Footer from "../../Components/Footer/Footer";
 import "./PrivacyPolicy.css";
 
 const PrivacyPolicy = () => {
