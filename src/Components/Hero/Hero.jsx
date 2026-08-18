@@ -45,14 +45,12 @@ const Hero = () => {
               Explore Products
             </Link>
 
-            <a
-            href="/Sarthak_Shelke_Resume.pdf"
-            download="Swanora-Global-Brochure.pdf"
+            <p
             className="hero-btn secondary-btn"
           >
             <FaDownload />
             Download Brochure
-          </a>
+          </p>
 
           </div>
 
