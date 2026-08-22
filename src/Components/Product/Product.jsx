@@ -8,6 +8,7 @@ import {
   FaSeedling,
   FaLeaf,
   FaSnowflake,
+  FaGlobeAsia,
 } from "react-icons/fa";
 
 import Image1 from '../../Assets/1.webp';
@@ -19,9 +20,24 @@ import Image6 from '../../Assets/6.webp';
 
 const products = [
   {
+    icon: <FaPepperHot />,
+    title: "Spices",
+    image: Image1,
+    description:
+      "Premium-quality Indian spices sourced directly from trusted growers across India.",
+    products: [
+      "Turmeric Fingers",
+      "Turmeric Powder",
+      "Whole Red Chilli",
+      "Red Chilli Powder",
+      "Coriander Seeds",
+      "Cumin Seeds"
+    ]
+  },
+  {
     icon: <FaAppleAlt />,
     title: "Fresh Fruits",
-    image: Image1,
+    image: Image2,
     description:
       "Fresh Indian fruits carefully selected to maintain freshness and export quality.",
     products: [
@@ -34,9 +50,9 @@ const products = [
   {
     icon: <FaLeaf />,
     title: "Fresh Vegetables",
-    image: Image2,
+    image: Image3,
     description:
-      "Fresh and high-quality Indian vegetables sourced from trusted growers for domestic and international markets.",
+      "Fresh Indian vegetables carefully sourced and selected to meet quality standards for international markets.",
     products: [
       "Green Chilli",
       "Onion",
@@ -45,26 +61,11 @@ const products = [
     ]
   },
   {
-    icon: <FaPepperHot />,
-    title: "Spices",
-    image: Image3,
-    description:
-      "Premium-quality Indian spices sourced directly from trusted growers and processors across India.",
-    products: [
-      "Turmeric Fingers",
-      "Turmeric Powder",
-      "Whole Red Chilli",
-      "Red Chilli Powder",
-      "Coriander Seeds",
-      "Cumin Seeds"
-    ]
-  },
-  {
-    icon: <FaLeaf />,
-    title: "Grain & Cereals",
+    icon: <FaSeedling />,
+    title: "Cereals & Grains",
     image: Image4,
     description:
-      "High-quality Indian grains and cereals carefully sourced to meet international food quality standards.",
+      "High-quality Indian cereals and grains sourced to meet the requirements of international markets.",
     products: [
       "Basmati Rice",
       "Non-Basmati Rice",
@@ -79,7 +80,7 @@ const products = [
     title: "Frozen Foods",
     image: Image5,
     description:
-      "Premium frozen fruits and vegetables preserved using advanced freezing techniques to maintain freshness and quality.",
+      "Quality frozen fruits and vegetables preserved using advanced freezing technology to maintain freshness and taste.",
     products: [
       "Frozen Green Peas",
       "Frozen Sweet Corn",
@@ -89,11 +90,11 @@ const products = [
     ]
   },
   {
-    icon: <FaSeedling />,
+    icon: <FaGlobeAsia />,
     title: "Pulses",
     image: Image6,
     description:
-      "Nutritious and high-quality Indian pulses processed and sourced according to international quality standards.",
+      "Nutritious Indian pulses carefully processed and sourced to meet quality standards for international markets.",
     products: [
       "Chickpeas",
       "Green Gram (Moong)",
