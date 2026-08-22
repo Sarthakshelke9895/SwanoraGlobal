@@ -8,7 +8,6 @@ import {
   FaSeedling,
   FaLeaf,
   FaSnowflake,
-  FaGlobeAsia
 } from "react-icons/fa";
 
 import Image1 from '../../Assets/1.webp';
@@ -20,22 +19,9 @@ import Image6 from '../../Assets/6.webp';
 
 const products = [
   {
-    icon: <FaPepperHot />,
-    title: "Spices",
-    image:Image1,
-    description:
-      "Premium-quality Indian spices sourced directly from trusted growers across India.",
-    products: [
-      "Turmeric Fingers",
-      "Turmeric Powder",
-      "Whole Red Chilli",
-      "Red Chilli Powder"
-    ]
-  },
-  {
     icon: <FaAppleAlt />,
     title: "Fresh Fruits",
-    image:Image2,
+    image: Image1,
     description:
       "Fresh Indian fruits carefully selected to maintain freshness and export quality.",
     products: [
@@ -46,26 +32,39 @@ const products = [
     ]
   },
   {
-    icon: <FaSeedling />,
-    title: "Pulses",
-    image:Image3,
+    icon: <FaLeaf />,
+    title: "Fresh Vegetables",
+    image: Image2,
     description:
-      "Nutritious Indian pulses processed under strict quality standards for international markets.",
+      "Fresh and high-quality Indian vegetables sourced from trusted growers for domestic and international markets.",
     products: [
-      "Chickpeas",
-      "Green Gram (Moong)",
-      "Black Gram (Urad)",
-      "Pigeon Pea (Toor)",
-      "Red Lentils (Masoor)",
-      "Kidney Beans (Rajma)"
+      "Green Chilli",
+      "Onion",
+      "Garlic",
+      "Ginger"
+    ]
+  },
+  {
+    icon: <FaPepperHot />,
+    title: "Spices",
+    image: Image3,
+    description:
+      "Premium-quality Indian spices sourced directly from trusted growers and processors across India.",
+    products: [
+      "Turmeric Fingers",
+      "Turmeric Powder",
+      "Whole Red Chilli",
+      "Red Chilli Powder",
+      "Coriander Seeds",
+      "Cumin Seeds"
     ]
   },
   {
     icon: <FaLeaf />,
-    title: "Cereals & Grains",
-    image:Image4,
+    title: "Grain & Cereals",
+    image: Image4,
     description:
-      "High-quality cereals and grains exported to meet global food standards.",
+      "High-quality Indian grains and cereals carefully sourced to meet international food quality standards.",
     products: [
       "Basmati Rice",
       "Non-Basmati Rice",
@@ -78,9 +77,9 @@ const products = [
   {
     icon: <FaSnowflake />,
     title: "Frozen Foods",
-    image:Image5, 
+    image: Image5,
     description:
-      "Frozen vegetables and fruits preserved using advanced freezing technology.",
+      "Premium frozen fruits and vegetables preserved using advanced freezing techniques to maintain freshness and quality.",
     products: [
       "Frozen Green Peas",
       "Frozen Sweet Corn",
@@ -90,20 +89,18 @@ const products = [
     ]
   },
   {
-    icon: <FaGlobeAsia />,
-    title: "Other Agricultural Products",
-    image:Image6,
+    icon: <FaSeedling />,
+    title: "Pulses",
+    image: Image6,
     description:
-      "A diverse range of agricultural commodities sourced from reliable suppliers across India.",
+      "Nutritious and high-quality Indian pulses processed and sourced according to international quality standards.",
     products: [
-      "Garlic",
-      "Ginger",
-      "Onion",
-      "Tamarind",
-      "Fresh Lemon",
-      "Groundnuts",
-      "Coriander Seeds",
-      "Cumin Seeds"
+      "Chickpeas",
+      "Green Gram (Moong)",
+      "Black Gram (Urad)",
+      "Pigeon Pea (Toor)",
+      "Red Lentils (Masoor)",
+      "Kidney Beans (Rajma)"
     ]
   }
 ];
